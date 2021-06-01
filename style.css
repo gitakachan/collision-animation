@@ -1,0 +1,13 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+}
+
+#star {
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  left: 44px;
+  top: 47px;
+  background-color: #fa0;
+}
