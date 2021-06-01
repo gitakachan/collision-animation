@@ -1,13 +1,18 @@
-.background {
+#background {
   width: 100vw;
-  height: 100vh;
+  height: 500px;
+  overflow: hidden;
+  background-color: #aaa;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #star {
   position: absolute;
   width: 49px;
   height: 49px;
-  left: 44px;
-  top: 47px;
+  left: 0px;
+  top: 0px;
   background-color: #fa0;
 }
