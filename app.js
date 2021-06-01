@@ -1,10 +1,16 @@
 let star = document.querySelector("#star");
-let style = getComputedStyle(star);
+let computedStyle = getComputedStyle(star);
 
-let left = parseInt(style.left); //與視窗左邊距離 44
-console.log(left);
+let speedX = 3;
+//let speedY = 3;
+function move() {
+  let currentLeft = parseInt(computedStyle.left); //與視窗左邊距離 (44)
+  let currentTop = parseInt(computedStyle.top); //與視窗上方距離 (47)
+  let left = currentLeft + speedX;
 
-let top = parseInt(style.top);//與視窗上方距離 47
-console.log(top);
+  star.style.left = left + "px";
+}
 
-
+setInterval(() => {
+  move();
+}, 20);
