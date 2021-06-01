@@ -4,12 +4,13 @@ let background = document.querySelector("#background"); //父元素
 
 let speedX = 3; //每次橫向運動量
 let speedY = 3; //每次縱向運動量
+
 function move() {
   checkCollision(background, star); //每次移動前都先檢測
 
   let starStyle = getComputedStyle(star);
-  let currentLeft = parseInt(starStyle.left); //一開始與視窗左邊距離
-  let currentTop = parseInt(starStyle.top); //一開始與視窗上方距離
+  let currentLeft = parseInt(starStyle.left); //一開始與左邊距離
+  let currentTop = parseInt(starStyle.top); //一開始與上方距離
   let left = currentLeft + speedX;
   let top = currentTop + speedY;
   star.style.left = left + "px";
